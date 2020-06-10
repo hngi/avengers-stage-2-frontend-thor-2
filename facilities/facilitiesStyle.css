@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -45,7 +46,6 @@ body {
 .restaurantText,
 .barText {
   width: 25em;
-  text-align: center;
 }
 
 .poolImgContainer,
