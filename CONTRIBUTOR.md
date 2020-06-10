@@ -7,3 +7,5 @@
 - [@uniqueomokenny](https://github.com/uniqueomokenny)
 
 - [@olodestone](https://github.com/olodestone)
+
+- [@Norbert](https://github.com/Norbyslim1)
