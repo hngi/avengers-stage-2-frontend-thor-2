@@ -2,110 +2,110 @@
 	box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-* {
-    box-sizing: border-box;
-  } 
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+body {
+	font-family: 'Times New Roman';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-  .content-1 {
-        position: absolute;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.8); /* Black background with 0.5 opacity */
-        color: black;
-        width: 100%;     
-        padding: 20px;
-        font-family: Times New Roman;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-  }
+/* Clearfix (clear floats) */
+.row::after {
+	content: '';
+	clear: both;
+	display: table;
+}
 
-  .content-1 h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-  }
+.content-1 {
+	position: absolute;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.8); /* Black background with 0.5 opacity */
+	color: black;
+	width: 100%;
+	padding: 20px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+}
 
-  .content-1 p {
-     /* font-weight: 100; */
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-  }
+.content-1 h1 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+}
 
-  .text-center {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-   /* text-decoration-line: underline;
-    text-decoration-style: none;   */    
-    margin-bottom: 50px;
-    margin-top: 50px;
-    
-  }
+.content-1 p {
+	/* font-weight: 100; */
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+}
 
-  .text-center span {
-      border-bottom: 1px solid black;
-      padding-bottom: 4px;
-  }
+.text-center {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	/* text-decoration-line: underline;
+    text-decoration-style: none;   */
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
 
-  .book-now {
-    background-color: #000000; /* black */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    margin-top: 25px;
-  }
+.text-center span {
+	border-bottom: 1px solid black;
+	padding-bottom: 4px;
+}
 
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
+.book-now {
+	background-color: #000000; /* black */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
 
-  .column {
-    padding: 10px;
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    position: relative;
-    margin: 0 auto;
-  }
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
 
-  
-  .column img {vertical-align: middle;}
+.column {
+	padding: 10px;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	position: relative;
+	margin: 0 auto;
+}
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
+.column img {
+	vertical-align: middle;
+}
 
-  .container {
-      text-align: center;
-  }
-=======
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+	.column {
+		width: 100%;
+	}
+}
+
+.container {
+	text-align: center;
+}
 body {
 	margin: 0;
 	width: 100%;
@@ -243,7 +243,6 @@ body {
 	color: black;
 	width: 100%;
 	padding: 20px;
-	font-family: Times New Roman;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -319,7 +318,6 @@ body {
 	border-bottom: 1px solid black;
 	margin-top: 4rem;
 	margin-bottom: 3rem;
-	font-family: Times New Roman;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
@@ -339,16 +337,63 @@ video {
 }
 /* Home video section end */
 
-/* Page 4 Styles by  */
-
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.5em;
+/* Page 3 Styles */
+.page-3-container {
+	display: flex;
+	padding: 3rem 1rem;
 }
 
+.page-3-container .col-1,
+.page-3-container .col-2 {
+	width: 50%;
+	padding: 0 1.5rem;
+}
+
+.col-1-content .accomodation-container .h3-header {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.col-1-content .accomodation-container .h3-header span {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 24px;
+	display: block;
+}
+
+.col-1-content .accomodation-container p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 129.6%;
+}
+
+.col-1-content .hotel-services-container {
+	margin-top: 5rem;
+}
+
+.col-1-content .hotel-services-container .h4-header {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.col-1-content .hotel-services-container ul {
+	padding-inline-start: 20px;
+}
+
+.col-1-content .hotel-services-container ul li {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 122.2%;
+}
+
+/* Page 3 Styles end */
+
+/* Page 4 Styles by  */
 .hero img {
 	width: 100%;
 	height: 80vh;
@@ -398,4 +443,3 @@ body {
 	width: 71%;
 }
 /* Page 4 end */
->>>>>>> ade96c5ca05ec8bb450ce3a3569a8f34bd71c9e9
