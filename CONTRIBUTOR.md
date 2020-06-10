@@ -5,3 +5,5 @@
 - [@ifatoki](https://github.com/ifatoki)
 
 - [@uniqueomokenny](https://github.com/uniqueomokenny)
+
+- [@olodestone](https://github.com/olodestone)
