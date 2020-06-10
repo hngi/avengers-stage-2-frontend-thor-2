@@ -213,6 +213,56 @@ body {
 	border: none;
 }
 
+.show {
+	display: block;
+}
+
+@media (max-width: 800px) {
+	.nav-container .logo-wrapper {
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav-container .logo-wrapper a img {
+		width: 60px;
+		height: 50px;
+		object-fit: contain;
+	}
+
+	.book-now-btn {
+		width: 80px;
+		height: 40px;
+		font-size: 14px;
+	}
+
+	.menu-toggler {
+		display: block;
+	}
+
+	.menu-container {
+		flex-grow: 2;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
+
+	.menu-nav.main-menu {
+		margin-left: unset;
+	}
+
+	.menu-nav.ml-auto {
+		margin-left: unset;
+	}
+
+	.nav-menu > .nav-container {
+		padding: 5px 10px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 @media (min-width: 992px) {
 	.nav-menu {
 		flex-flow: row nowrap;
@@ -461,7 +511,8 @@ video {
 }
 
 .room-card .card-content-wrapper .room-price,
-.room-card .card-content-wrapper .size-icon {
+.room-card .card-content-wrapper .size-icon,
+.room-card .card-content-wrapper .user-icon {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -492,6 +543,79 @@ video {
 	font-size: 18px;
 	cursor: pointer;
 	border: none;
+}
+
+@media (max-width: 800px) {
+	.page-3-container {
+		flex-direction: column;
+		padding: 3rem o.5rem;
+	}
+
+	.page-3-container .col-1,
+	.page-3-container .col-2 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.col-1-content .accomodation-container .h3-header {
+		font-size: 20px;
+	}
+
+	.col-1-content .accomodation-container .h3-header span {
+		font-size: 16px;
+	}
+
+	.col-1-content .accomodation-container p {
+		font-size: 12px;
+		line-height: 1.1;
+	}
+
+	.col-1-content .hotel-services-container {
+		margin-top: 3rem;
+	}
+
+	.col-1-content .hotel-services-container .h4-header {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+
+	.col-1-content .hotel-services-container ul {
+		padding-inline-start: 10px;
+	}
+
+	.col-1-content .hotel-services-container ul li {
+		font-size: 14px;
+		line-height: 1.1;
+	}
+
+	.room-card img {
+		width: 60vw;
+		height: 200px;
+	}
+
+	.room-card .card-content-wrapper .room-title {
+		font-size: 14px;
+	}
+
+	.room-card .card-content-wrapper .room-price,
+	.room-card .card-content-wrapper .size-icon,
+	.room-card .card-content-wrapper .user-icon {
+		font-size: 12px;
+	}
+
+	.room-card .card-content-wrapper .card-action-wrapper {
+		margin-top: 0.9rem;
+	}
+
+	.room-card .card-content-wrapper .card-action-wrapper button {
+		width: 80px;
+		height: 50px;
+		font-size: 14px;
+	}
+
+	.room-card .card-content-wrapper {
+		margin-left: 0.5rem;
+	}
 }
 /* Page 3 Styles end */
 
@@ -543,5 +667,18 @@ video {
 
 .details p {
 	width: 71%;
+}
+
+@media (max-width: 800px) {
+	.hero img {
+		height: 50vh;
+	}
+
+	.hero p {
+		font-size: 0.9rem;
+		padding: 0 10px;
+		max-width: 100%;
+		line-height: 1.1;
+	}
 }
 /* Page 4 end */
