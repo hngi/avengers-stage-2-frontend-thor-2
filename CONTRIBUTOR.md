@@ -1,5 +1,10 @@
 # Contributors
 
+
+-  [@ifatoki](https://github.com/ifatoki)
+
+-  [@Feyikemi](https://github.com/Agboolafeyikemi)
+
 - [@elcozy](https://github.com/elcozy)
 
 - [@ifatoki](https://github.com/ifatoki)
@@ -9,3 +14,4 @@
 - [@olodestone](https://github.com/olodestone)
 
 - [@Norbert](https://github.com/Norbyslim1)
+
