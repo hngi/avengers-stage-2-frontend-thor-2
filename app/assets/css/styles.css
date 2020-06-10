@@ -203,6 +203,8 @@ body {
 .col-sm-4 {
 	padding: 10px;
 }
+
+/* Home video section */
 .videotour {
 	display: flex;
 	flex-direction: column;
@@ -211,21 +213,27 @@ body {
 }
 #videoheader {
 	border-bottom: 1px solid black;
-	padding-bottom: 1vh;
-	margin-bottom: 1vh;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	font-family: Times New Roman;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
 }
 .videocontainer {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	width: 97vw;
-	height: 50vh;
+	height: 80vh;
 	padding: 0.5vw;
 	margin-bottom: 2vh;
 }
 video {
 	object-fit: cover;
 }
+/* Home video section end */
 
 /* Page 4 Styles by  */
 
@@ -239,7 +247,7 @@ body {
 
 .hero img {
 	width: 100%;
-	height: 60vh;
+	height: 80vh;
 	object-fit: cover;
 }
 .hero p {
