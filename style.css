@@ -24,9 +24,9 @@ html,body{
   grid-column: 1;
   justify-items: center;
 }
-#tatImage{
-    width: 80%;
-    height: auto;
+#tatIframe{
+    width: 80% !important;
+    height: auto !important;
 }
 
 /*------- Brands ------------------*/
