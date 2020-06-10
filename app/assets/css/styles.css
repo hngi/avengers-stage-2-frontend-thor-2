@@ -2,6 +2,110 @@
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+* {
+    box-sizing: border-box;
+  } 
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .content-1 {
+        position: absolute;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.8); /* Black background with 0.5 opacity */
+        color: black;
+        width: 100%;     
+        padding: 20px;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+  }
+
+  .content-1 h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .content-1 p {
+     /* font-weight: 100; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .text-center {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+   /* text-decoration-line: underline;
+    text-decoration-style: none;   */    
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+  }
+
+  .text-center span {
+      border-bottom: 1px solid black;
+      padding-bottom: 4px;
+  }
+
+  .book-now {
+    background-color: #000000; /* black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .column {
+    padding: 10px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  
+  .column img {vertical-align: middle;}
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .container {
+      text-align: center;
+  }
+=======
 body {
 	margin: 0;
 	width: 100%;
@@ -286,3 +390,4 @@ body {
 	width: 71%;
 }
 /* Page 4 end */
+>>>>>>> ade96c5ca05ec8bb450ce3a3569a8f34bd71c9e9
