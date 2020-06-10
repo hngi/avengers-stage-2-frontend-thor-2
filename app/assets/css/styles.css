@@ -203,3 +203,27 @@ body {
 .col-sm-4 {
 	padding: 10px;
 }
+.videotour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+#videoheader{
+    border-bottom: 1px solid black;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
+}
+.videocontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 97vw;
+    height: 50vh;
+    padding:0.5vw;
+    margin-bottom: 2vh;
+}
+video{
+	object-fit: cover;
+}
