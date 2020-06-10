@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition: all 0.4s;
 }
 
 /* Clearfix (clear floats) */
@@ -213,10 +214,6 @@ body {
 	border: none;
 }
 
-.show {
-	display: block;
-}
-
 @media (max-width: 800px) {
 	.nav-container .logo-wrapper {
 		width: 100vw;
@@ -246,6 +243,10 @@ body {
 		justify-content: center;
 		align-items: center;
 		display: none;
+	}
+
+	.show {
+		display: block;
 	}
 
 	.menu-nav.main-menu {
