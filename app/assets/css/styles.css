@@ -335,6 +335,44 @@ body {
 video {
 	object-fit: cover;
 }
+.sponsors-container{
+	margin-top: 8vh;
+	width: 100vw;
+	height: 20vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(../img/jason-l.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 3vh;
+}
+.sponsors{
+	margin-top: 4vh;
+}
+#condenast{
+	position: relative;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 30px;
+	
+}
+#bloombergdiv{
+	position: relative;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	
+}
+#bloomberg{
+	font-size: 30px;
+	font-style: normal;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#forbes{
+	position: relative;
+	font-size: 38px;
+	font-style: normal;
+	font-family: 'Times New Roman';
+}
 /* Home video section end */
 
 /* Page 3 Styles */
