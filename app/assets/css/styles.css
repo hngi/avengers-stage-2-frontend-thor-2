@@ -406,8 +406,8 @@ video {
 .col-1-content .accomodation-container p {
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
-	line-height: 129.6%;
+	font-size: 18px;
+	line-height: 135.6%;
 }
 
 .col-1-content .hotel-services-container {
@@ -417,19 +417,25 @@ video {
 .col-1-content .hotel-services-container .h4-header {
 	font-style: italic;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.essay {
+	font-family: 'Open Sans', sans-serif;
+	text-align:justify;
 }
 
 .col-1-content .hotel-services-container ul {
-	padding-inline-start: 20px;
+	padding-inline-start: 30px;
 }
 
 .col-1-content .hotel-services-container ul li {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 122.2%;
+	line-height: 140.5%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .col-2-rooms-container {
@@ -454,6 +460,7 @@ video {
 }
 
 .room-card .card-content-wrapper .room-title {
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
