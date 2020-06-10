@@ -83,6 +83,21 @@ const rooms = [
 document.addEventListener('DOMContentLoaded', () => {
 	const ui = new UI();
 
-	// get all products
-	ui.displayRooms(rooms);
+	// get all room
+	roomsDom && ui.displayRooms(rooms);
+
+	const togglerBtn = document.querySelector('.menu-toggler');
+	const menu = document.querySelector('.menu-container');
+
+	togglerBtn.addEventListener('click', () => {
+		const toggle = menu.classList.contains('show');
+
+		if (toggle) {
+			menu.classList.remove('show');
+			togglerBtn.classList.remove('change');
+		} else {
+			menu.classList.add('show');
+			togglerBtn.classList.add('change');
+		}
+	});
 });
