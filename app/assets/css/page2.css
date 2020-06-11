@@ -1,0 +1,27 @@
+*Contact Us Page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.border-img
+{position: relative;
+width: 1347px;
+height: 400px;
+
+background: #ffffff;
+}
+    
+
+/* donald-teel-CFyJZMDyJJY-unsplash 1 */
+#main-container{
+    display:flex;
+    position: relative;
+    Justify-content: space-between;
+  Padding: 5vw;
+    font-size: 18px;
+}
+inpu{ 
+    border:none;
+    border-bottom: 1px solid black;
+    }
