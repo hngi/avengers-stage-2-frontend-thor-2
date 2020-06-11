@@ -1,6 +1,8 @@
+/* FOOTER */
 
 .footer {
   display: grid;
+  margin-top: 80px;
 }
 
 .footer a {
@@ -54,6 +56,7 @@
 }
 
 .bottom {
+  padding: 0 10px;
   background: black;
   color: white;
   display: flex;
@@ -65,9 +68,53 @@
   line-height: 16px;
 }
 
-@media only screen and (max-width: 800px) { 
+.wrapper {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) { 
   .bottom p {
     font-size: 12px;
     line-height: 14px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .divider {
+    display: none;
+  }
+  .block {
+    text-align: center;
+  }
+  .block {
+    margin: 0;
+    padding: 0;
+  }
+  .block > p {
+    width: 100%;
+    text-align: center;
+  }
+  .block:nth-child(1) {
+    width: 50%;
+  }
+  span {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bottom > p {
+    font-size: 8px;
   }
 }
