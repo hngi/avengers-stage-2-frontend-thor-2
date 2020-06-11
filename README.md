@@ -22,3 +22,5 @@ for more information on git workflow kindly look [here](https://www.atlassian.co
 ```-  [@USERNAME](https://github.com/USERNAME)``` 
 
 leave a new line between the last name you see there ans yours, just follow the same format as the last person.
+
+permalink: /app/pages/index.html
