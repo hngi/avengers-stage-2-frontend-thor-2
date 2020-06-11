@@ -1,0 +1,421 @@
+body, html{
+    margin: 0;
+    padding: 0;
+  }
+/*header*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 73px;
+  /* height: 90px; */
+  background: white;
+}
+
+.logo {
+  width: 124px;
+  height: 100%;
+}
+.logo > img {
+  width: 100%;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  padding-bottom: 7px;
+}
+
+.active-link {
+  border-bottom: 2px solid black;
+}
+
+button {
+  width: 150px;
+  height: 65px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* HAMBURGER LOGIC */
+
+.hamburger {
+  position: absolute;
+}
+#menuToggle
+{
+  display: none;
+  /* position: relative;
+  top: 50px;
+  left: 50px; */
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:active
+{
+  color: black;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(0, 0, 0, 0.514);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+@media only screen and (max-width: 850px) { 
+  #menuToggle{
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    z-index: 1;
+  
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .links {
+    display: none;
+  }
+  .nav-bar {
+    justify-content: flex-end;
+  }
+
+  button {
+    display: none;
+  }
+  .logo > img {
+    margin: 5px auto;
+  }
+}
+
+
+/*contact form */
+  .responsive-image {
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+}
+.sec-nav { 
+    display: flex; 
+    height: 70vh; width: 100%; padding-top: 30px;
+}
+.sec-nav-item {
+    width: 50%; height: 50vh;padding-left: 20px;
+    font-family: 'Times New Roman';
+}
+.sec-item-one {
+    padding-left: 60px;
+}
+.cont-text{
+    margin-bottom: 15px; padding-bottom: 20px;
+    margin-top: 15px; padding-left: 10px; 
+    width: 60%;border-style: none none ridge none;
+    border-bottom-color: rgb(178, 207, 233);
+    font-family: Roboto; 
+}
+.sed{
+    width: 15%;height: 30px; margin-left: 65%; 
+    padding-bottom: 0px;background-color: black;
+    color: white;margin-top: 25px;
+}
+.add-two{ font-size: 0.7em;line-height: 15px;
+
+}
+.add-one{
+    line-height:30px;
+}
+
+@media screen and (max-width: 650px){
+    body{
+      overflow-x:hidden;
+    }
+  
+  .sec-nav { 
+        display: flex;
+        flex-direction: column; 
+        margin-bottom:350px;
+      
+    }
+    .cont-text {
+        margin-top: 15px; 
+        margin-left:40px;
+        margin-top: 50px;
+        width:250px;
+    }
+    .sed {
+        width: 30%;
+        margin-left:40px;
+    }
+
+    /*contact form */
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 720px;
+    max-height: 250px;
+    object-fit:cover;
+}
+
+
+}
+
+
+/*footer-section */
+.footer {
+  display: grid;
+  margin-top: 80px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 200px 2px 200px 2px 200px;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  align-items: center;
+}
+
+.divider {
+  background: black;
+  width: 1px;
+  height: 90px;
+}
+
+.block {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.block:nth-child(1) {
+  display: grid;
+  justify-items: center;
+}
+
+.block > p {
+  width: 120px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.block > p:first-child {
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between; 
+  width: 70px;
+}
+.instagram-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.bottom {
+  padding: 0 10px;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) { 
+  .bottom p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .divider {
+    display: none;
+  }
+  .block {
+    text-align: center;
+  }
+  .block {
+    margin: 0;
+    padding: 0;
+  }
+  .block > p {
+    width: 100%;
+    text-align: center;
+  }
+  .block:nth-child(1) {
+    width: 50%;
+  }
+  span {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  input[type="submit"]{
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+@media only screen and (max-width: 500px) {
+  .bottom > p {
+    font-size: 8px;
+  }
+}
+
