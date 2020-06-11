@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 3 - frontend</title>
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+
+<body>
+
+  <!-- Navbar section : made by @Taiwo, Taiwo Ogunola, uniqueomokenny@gmail.com -->
+  <nav class="nav-menu" id="custom-nav">
+    <div class="nav-container">
+      <div class="logo-wrapper">
+        <a href="./home.html" class="nav-logo">
+          <img src="../assets/img/logo.png" alt="logo" width="123" height="95">
+        </a>
+
+        <button class="menu-toggler" type="button">
+          <div class='line1'></div>
+          <div class='line2'></div>
+          <div class='line3'></div>
+        </button>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu-nav main-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link">About us</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./rooms-and-rates.html" class="menu-link">Rooms</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./facilities.html" class="menu-link">Facilities</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#" class="menu-link">Gallery</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="./contact-us.html" class="menu-link">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="menu-nav ml-auto">
+          <button class="book-now-btn scale">Book now</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar section  -->
+
+  <!-- Header section -->
+  <header class="hero">
+    <img src="../assets//img/view-1.jpg" alt="pool image" />
+    <p>
+      The Abu Hotels has been serving it’s guests for more than 50 years, built from the blood and sweat of the
+      beautiful
+      makurdi people, we are proud of where we are.
+    </p>
+  </header>
+  <!-- Header section -->
+
+  <div class="container">
+    <div style="display: inline-block;">
+      <p class="text-center"><span>Rooms & Suites</span></p>
+
+      <div class="row" id='home-rooms'>
+        <!-- added dynamically with JS, check script.js -->
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div class="center">
+    <button class="button book-now scale">BOOK NOW</button>
+  </div>
+
+  <!-- Video tour -->
+  <div class="videotour">
+    <h4 id="videoheader">Take a Video Tour</h4>
+    <div class="videocontainer">
+      <video width='100%' controls>
+        <source
+          src="https://res.cloudinary.com/ddvsahouv/video/upload/v1591775385/hotel-tour/Hotel_Facilities_xxitgi.mp4"
+          type="video/mp4">
+        <p>your browser does not support the video tag</p>
+      </video></div>
+  </div>
+  <!-- Video tour end -->
+
+  <!-- Sponsors -->
+  <div class="sponsors-container">
+    <div class="sponsors">
+      <h3 id="condenast">CONDÉ NAST</h3>
+      <span>The best in Nigeria</span>
+    </div>
+    <div class="sponsors" id='bloombergdiv'>
+      <h3 id="bloomberg"><b>Bloomberg</b></h3>
+      <span>No.1 in Africa</span>
+    </div>
+    <div class="sponsors">
+      <h3 id="forbes"><b>Forbes</b></h3>
+      <span>One of the best in Nigeria</span>
+    </div>
+  </div>
+  <!-- Sponsors end -->
+
+  <!-- footer -->
+  <footer>
+    <div class="flex-container">
+      <div>
+        <img src="../assets/img/logo.png" width="120" height="120" alt="logo">
+        <div class="fa-icons">
+          <i class="fa fa-facebook fa-1x"></i>
+          <i class="fa fa-instagram fa-1x"></i>
+          <i class="fa fa-twitter fa-1x"></i>
+        </div>
+      </div>
+
+      <div class="vl"></div>
+      <div>
+        <h4>Find Us</h4>
+        <p>North Bank Estate</p>
+        <p>1234 Abu Avenue</p>
+        <p>Makurdi,Benue</p>
+      </div>
+      <div class="vl"></div>
+
+
+      <div>
+        <h4>Contact Us</h4>
+        <p>(+234)234536</p>
+        <p>(+23480234536)</p>
+      </div>
+
+    </div>
+    <div class="flex-container1 bottom">
+      <div>TERMS AND CONDITIONS</div>
+      <div>PRIVACY POLICY </div>
+      <div>
+        &copy;2020 ABU HOTEL ALL RIGHTS RESERVED
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
