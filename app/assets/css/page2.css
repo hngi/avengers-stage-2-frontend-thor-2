@@ -1,15 +1,18 @@
-*Contact Us Page */
+/*Contact Us Page */
 *{
     padding: 0;
     margin: 0;
     box-sizing:border-box;
 }
-.border-img
-{position: relative;
-width: 1347px;
-height: 400px;
-
-background: #ffffff;
+.border-img{
+position: relative;
+width: 100vw;
+height: 70vh;
+}
+img {
+    width:100vw;
+    height:100%;
+    object-fit: cover;
 }
     
 
@@ -21,7 +24,7 @@ background: #ffffff;
   Padding: 5vw;
     font-size: 18px;
 }
-inpu{ 
+input{ 
     border:none;
     border-bottom: 1px solid black;
     }
