@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Times New Roman';
+	font-family: 'Alegreya Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -405,11 +407,11 @@ video {
 	/* text-align: center; */
 	margin-block-start: 0.2em;
 	margin-block-end: 0.2em;
+	letter-spacing: 3.2px;
 }
 
 #condenast {
 	position: relative;
-	font-family: 'Times New Roman', Times, serif;
 	font-size: 30px;
 }
 /* #bloombergdiv {
@@ -419,12 +421,10 @@ video {
 #bloomberg {
 	font-size: 30px;
 	font-style: normal;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #forbes {
 	font-size: 38px;
 	font-style: normal;
-	font-family: 'Times New Roman';
 }
 
 @media (max-width: 800px) {
@@ -485,7 +485,6 @@ video {
 }
 
 .essay {
-	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
 }
 
@@ -498,7 +497,6 @@ video {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 140.5%;
-	font-family: 'Open Sans', sans-serif;
 }
 
 .col-2-rooms-container {
@@ -523,7 +521,6 @@ video {
 }
 
 .room-card .card-content-wrapper .room-title {
-	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
