@@ -7,3 +7,5 @@
 - [@uniqueomokenny](https://github.com/uniqueomokenny)
 
 - [@olodestone](https://github.com/olodestone)
+
+- [@kamaraB] (https://github.com/nwokocha-amarachi)
