@@ -1,4 +1,5 @@
 const roomsDom = document.querySelector('.col-2-rooms-container');
+const homeRoomsDom = document.getElementById('home-rooms');
 
 class UI {
 	displayRooms(rooms) {
@@ -6,8 +7,10 @@ class UI {
 		rooms.forEach(({ img, title, price, size, users }) => {
 			result += `
         <!-- single room -->
-          <div class="room-card">
-            <img src=${img} alt="">
+					<div class="room-card">
+						<div style="overflow: hidden">
+            	<img class='scale'  src=${img} alt="">
+						</div>
 
             <div class="card-content-wrapper">
               <div class="room-title">${title}</div>
@@ -18,7 +21,7 @@ class UI {
               </div>
 
               <div class="card-action-wrapper">
-                <button>Book now</button>
+                <button class='scale'>Book now</button>
               </div>
             </div>
           </div>
@@ -28,6 +31,26 @@ class UI {
 
 		roomsDom.innerHTML = result;
 	}
+
+	displayHomeRooms = (rooms) => {
+		let result = '';
+		rooms.forEach(({ img, title, price }) => {
+			result += `
+        <!-- single room -->
+          <div class="column scale">
+						<img src=${img} class="img-responsive" alt=""
+							style="width:100%">
+						<div class="content-1">
+							<h1>${title}</h1>
+							<p>${price}</p>
+						</div>
+					</div>
+        <!-- end of single room -->
+      `;
+		});
+
+		homeRoomsDom.innerHTML = result;
+	};
 }
 
 const rooms = [
@@ -80,11 +103,50 @@ const rooms = [
 	},
 ];
 
+const homeRooms = [
+	{
+		img: '../assets/img/febrian-zakaria-sjvU0THccQA-unsplash.jpg',
+		title: 'Single Room',
+		price: '₦50,000 per Night',
+	},
+
+	{
+		img: '../assets/img/stephen-leonardi--TsLaYk1DLM-unsplash.jpg',
+		title: 'Business Suite',
+		price: '₦70,000 per Night',
+	},
+
+	{
+		img: '../assets/img/paul-postema-nj6AXrnyEac-unsplash.jpg',
+		title: 'Standard Room',
+		price: '₦100,000 per Night',
+	},
+
+	{
+		img: '../assets/img/steven-ungermann-aRT5UCf2MYY-unsplash.jpg',
+		title: 'Couple Suite',
+		price: '₦120,000 per Night',
+	},
+
+	{
+		img: '../assets/img/reisetopia-aI6Su7Mu9Ro-unsplash.jpg',
+		title: 'Family Suite',
+		price: '₦190,000 per Night',
+	},
+
+	{
+		img: '../assets/img/aw-creative-VGs8z60yT2c-unsplash.jpg',
+		title: 'Presidential Suite',
+		price: '₦210,000 per Night',
+	},
+];
+
 document.addEventListener('DOMContentLoaded', () => {
 	const ui = new UI();
 
 	// get all room
 	roomsDom && ui.displayRooms(rooms);
+	homeRoomsDom && ui.displayHomeRooms(homeRooms);
 
 	const togglerBtn = document.querySelector('.menu-toggler');
 	const menu = document.querySelector('.menu-container');
