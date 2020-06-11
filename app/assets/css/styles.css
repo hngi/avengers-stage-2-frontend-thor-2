@@ -101,6 +101,11 @@ body {
 @media screen and (max-width: 500px) {
 	.column {
 		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.center {
+		margin-top: 0;
 	}
 }
 
@@ -221,6 +226,10 @@ body {
 		justify-content: space-between;
 	}
 
+	.menu-item {
+		padding: 0.6rem 0;
+	}
+
 	.nav-container .logo-wrapper a img {
 		width: 60px;
 		height: 50px;
@@ -246,7 +255,7 @@ body {
 	}
 
 	.show {
-		display: block;
+		display: flex;
 	}
 
 	.menu-nav.main-menu {
@@ -347,13 +356,6 @@ body {
 	margin-top: 25px;
 }
 
-.center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 50px;
-}
-
 .col-sm-4 {
 	padding: 10px;
 }
@@ -398,9 +400,6 @@ video {
 	background-repeat: no-repeat;
 	padding-top: 3vh;
 }
-/* .sponsors {
-	margin-top: 4vh;
-} */
 
 .sponsors h3 {
 	/* text-align: center; */
@@ -413,10 +412,10 @@ video {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 30px;
 }
-#bloombergdiv {
+/* #bloombergdiv {
 	margin-left: 15vw;
 	margin-right: 15vw;
-}
+} */
 #bloomberg {
 	font-size: 30px;
 	font-style: normal;
@@ -427,6 +426,19 @@ video {
 	font-style: normal;
 	font-family: 'Times New Roman';
 }
+
+@media (max-width: 800px) {
+	.sponsors-container {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 50vh;
+	}
+
+	.sponsors {
+		margin-left: 1.8rem;
+	}
+}
+
 /* Home video section end */
 
 /* Page 3 Styles */
@@ -474,7 +486,7 @@ video {
 
 .essay {
 	font-family: 'Open Sans', sans-serif;
-	text-align:justify;
+	text-align: justify;
 }
 
 .col-1-content .hotel-services-container ul {
