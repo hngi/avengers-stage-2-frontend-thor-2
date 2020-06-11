@@ -18,7 +18,17 @@
 
 - [@Norbert](https://github.com/Norbyslim1)
 
--[@muyi](https://github.com/Norbyslim1)
+- [@muyi](https://github.com/Norbyslim1)
 
--[@peace0](https://github.com/onyeepeace)
+-  [@peace0](https://github.com/onyeepeace)
+
+-  [@inya](https://github.com/amadiinya)
+
+-  [@DToba](https://github.com/dretoba91)
+
+-  [@ikpemosi](https://github.com/ikpemosiarnold)
+
+- [@Aquilaafuadajo](https://github.com/aquilaafuadajo)
+
+- [@ehimze007] (https://github.com/ehimze007)
 

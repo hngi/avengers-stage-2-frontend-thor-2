@@ -1,0 +1,135 @@
+.hamburger{
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus{
+  outline: none;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+}
+.Nav-List{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.7rem;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+ul{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+  display: inline-block;
+  padding: 0.8rem 0.8rem;
+  margin-top: 2rem;
+}
+
+.btn{
+  margin-left: 15rem;
+}
+.btn{
+  border: none;
+  background-color: black;
+  display: inline;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.btn>a{
+  color: white;
+  text-align: center;
+
+}
+
+
+
+a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+}
+
+
+.brand-logo{
+  width: 150px;
+  margin-left: 1.5rem;
+  text-align: center;
+}
+
+
+li>a:visited, a:link{
+  color: black;
+}
+
+.Nav-items a:hover{
+  cursor: pointer;
+  border-bottom: 3px black solid;
+  padding-bottom: 1rem;
+}
+
+
+
+@media(max-width: 768px){
+  .Nav-List{
+    background-color: rgba(250,250,250,0.4);
+    flex-direction: column;
+    transition: all 650ms ease-in-out;  
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+.hamburger{
+  display: block;
+  position: relative;
+  position: absolute;
+  top: 4rem;
+  right: 20px;
+}
+
+.btn{
+  margin-left: 0;
+}
+
+.brand-logo{
+  width: 100px;
+}
+
+
+li>a:hover{
+
+  border-bottom: none;
+}
+
+.menu li a:hover{
+
+  border-bottom: none;
+
+}
+
+li{
+  display: block;
+  text-align: center;  
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.menu{
+  display: none;
+}
+
+.menu.show{
+  display: initial;
+}
