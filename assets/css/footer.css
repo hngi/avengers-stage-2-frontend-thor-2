@@ -1,0 +1,42 @@
+.flex-container {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+.flex-container > div {
+	background-color: white;
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 10px;
+	font-size: 10px;
+}
+
+h4 {
+	margin-bottom: 7px;
+}
+
+.vl {
+	border-left: 1px solid black;
+	height: 97px;
+}
+
+.bottom {
+	background-color: black;
+	width: 100%;
+}
+
+.flex-container1 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-container1 > div {
+	color: white;
+	width: 100px;
+	margin: 18px;
+	text-align: center;
+	line-height: 10px;
+	font-size: 7px;
+}
