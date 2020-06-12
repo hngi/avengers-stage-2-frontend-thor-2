@@ -222,33 +222,45 @@ button {
 
 
 /*contact form */
+input:focus, textarea:focus, select:focus, button{
+  outline: none;
+}
+
   .responsive-image {
     width: 100%;
     height: 400px;
     object-fit:cover;
 }
 .sec-nav { 
+    box-sizing: border-box;
     display: flex; 
-    height: 70vh; width: 100%; padding-top: 30px;
+    width: 100%; margin-top: 50px;
 }
 .sec-nav-item {
-    width: 50%; height: 50vh;padding-left: 20px;
+    width: 50%;
     font-family: 'Times New Roman';
+    padding-right: 30px;
 }
 .sec-item-one {
     padding-left: 60px;
 }
+
+.form-button {
+  display: block;
+  width: 90px;
+  height: 50px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  margin-left: auto;
+}
 .cont-text{
     margin-bottom: 15px; padding-bottom: 20px;
     margin-top: 15px; padding-left: 10px; 
-    width: 60%;border-style: none none ridge none;
+    width: 100%;border-style: none none ridge none;
     border-bottom-color: rgb(178, 207, 233);
     font-family: Roboto; 
-}
-.sed{
-    width: 15%;height: 30px; margin-left: 65%; 
-    padding-bottom: 0px;background-color: black;
-    color: white;margin-top: 25px;
 }
 .add-two{ font-size: 0.7em;line-height: 15px;
 
@@ -256,27 +268,40 @@ button {
 .add-one{
     line-height:30px;
 }
-
-@media screen and (max-width: 650px){
-    body{
+.cover-image > img {
+  width: 100%;
+}
+@media screen and (max-width: 700px){
+    /* body{
       overflow-x:hidden;
-    }
+    } */
   
   .sec-nav { 
         display: flex;
         flex-direction: column; 
-        margin-bottom:350px;
-      
+        padding: 0 40px;
+        /* box-sizing: border-box; */
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .sec-item-one {
+      width: 100%;
+      padding: 0;
+    }
+
+    .add-one, .add-two {
+      text-align: center;
+    }
+
+    .sec-nav-item {
+      width: 100%;
+      padding: 0;
     }
     .cont-text {
-        margin-top: 15px; 
-        margin-left:40px;
-        margin-top: 50px;
-        width:250px;
-    }
-    .sed {
-        width: 30%;
-        margin-left:40px;
+        width:100%;
     }
 
     /*contact form */
@@ -418,4 +443,4 @@ input[type="submit"]:hover {
     font-size: 8px;
   }
 }
-
+}
