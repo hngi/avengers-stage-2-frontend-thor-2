@@ -1,90 +1,139 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  /*-------Cover picture section ------------------*/
-  .banner {
-    display: flex;
-    flex-direction: column;
-  }
-  .description {
-    width: 950px;
-    margin: 0 auto;
-    text-align: center;
-    font-style: italic;
-    font-size: 24px;
-    line-height: 28px;
-    padding: 0 40px;
-  }
-  
-  .cover-image > img {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------Cover picture section ------------------*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 40px;
+}
+
+.cover-image>img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 /*-------Take a Video Tour Section ------------------*/
 
-#tatSection{
-    margin-bottom: 50px;
+#tatSection {
+  margin-bottom: 50px;
 }
-#tatText{
-    font-family: 'Times New Roman', Times, serif;
-    text-align:center;
-    text-decoration: underline;
+
+#tatText {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  text-decoration: underline;
 }
-#tatVideo{
+
+#tatVideo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column: 1;
   justify-items: center;
 }
-#tatIframe{
-    width: 90% !important;
-    height: auto !important;
+
+#tatIframe {
+  width: 90% !important;
+  height: auto !important;
 }
 
 /*------- Brands ------------------*/
-#brandStrip{
-    width: 100%;
-    height: auto;
-    background: url(./images/dining-2.jpg);
-    background-position: center center;
-    background-size: cover;    
-}
-#brands-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 1; 
-   -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);  
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px 40px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);  
-}
-.strip-logo{
-    width: auto;
-    height: auto;
-    padding: 20px;
+
+#brandStrip {
+  width: 100%;
+  height: auto;
+  background: url(./images/dining-2.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
-@media only screen and (max-width: 1024px) { 
-   .description {
+#brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px 40px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.strip-logo {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .description {
     width: 90%;
   }
-
-  #tatIframe{
+  #tatIframe {
     width: 95% !important;
+  }
 }
+
+.img {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin-top: 20px
+ }
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  display: inline-block;
+}
+
+.row {
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 300px;
+  padding: 3px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
 }
