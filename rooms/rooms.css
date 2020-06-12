@@ -1,205 +1,216 @@
 /* CSS Responsive Grid View */
 * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    padding:0;
-    margin:0;
+  box-sizing: border-box;
 }
 
+html, body {
+  padding:0;
+  margin:0;
+}
+
+/* CSS FOR ROOM PAGE ONLY */
 .cover {
-    background-image: url("../images/bedroom-1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    height: 86.81vh;
-   }
+  background-image: url("../images/bedroom-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  height: 86.81vh;
+ }
 
-   .descritption {
-       margin: 0 auto;
-       text-align: center;
-       width: 43%;
-       line-height: 1.5;
-       margin-top: 5%;
-   }
+ .descritption {
+     margin: 0 auto;
+     text-align: center;
+     width: 43%;
+     line-height: 1.5;
+     margin-top: 5%;
+ }
 
-   .grid-container {
-    display:grid;
-    grid-template-columns:50% 50%;
-  }
+ .row {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   
+ }
 
-   .side-message {
-    width: auto;
-    float: left;
-    padding: 15px;
-    line-height: 1.5;
+ .column1-item {
+   margin: 15% 5%;
+   line-height: 2;
+   
+ }
+
+ .column1-item > h3 {
+   margin-left: 23px;
+ }
+
+ .column2-item {
+   margin: 10% 5%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+
+ .img-dimension {
+  width: 260px;
+  height: 260px;
+}
+
+.room-features > h3 {
+  margin-top: 50px;
+}
+
+.room-size {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.room-fee {
+  margin-bottom: 0px;
+}
+
+.button {
+  background-color: black;
+  margin-top: 15px;
+  margin-left: 130px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* CSS FOR FOOTER  */
+.footer {
+  display: grid;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 200px 2px 200px 2px 200px;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  align-items: center;
+}
+
+.divider {
+  background: black;
+  width: 1px;
+  height: 90px;
+}
+
+.block {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.block:nth-child(1) {
+  display: grid;
+  justify-items: center;
+}
+
+.block > p {
+  width: 120px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.block > p:first-child {
+  font-weight: bold;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between; 
+  width: 70px;
+}
+.instagram-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.bottom {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* MEDIA QUERY FOR ROOMS PAGE ONLY */
+@media only screen and (max-width: 850px){
+  .row {
+    display: flex;
+    flex-direction: column;
     text-align: justify;
   }
 
-  .welcome-message {
-    width: 85%;
-    padding-left: 20px;
-  }
-
-  .side-message h2 {
-    margin-bottom: 0px;
-  }
-  
-  .rooms {
-    width: auto;
-    float: left;
-    padding: 15px;
-    position: relative;
-    height: 285px;
-    /* margin: 40px 0px 40px 0px; */
-  }
-
-  .bs {
-    margin: 0px;
-  }
-
-  .sr {
-    bottom: 100px;
-  }
-
-  .cs {
-    bottom: 50px;
-  }
-
-  .ps {
-     top: 40px;
-     margin-bottom: 100px;
-  }
-
-  .img-dimension {
-    width: 200px;
-    height: 200px;
-    float: left;
-    position: absolute;
-    top: 60px;
-  }
-
-  .room-description {
-    margin-left: 0px;
-    position: absolute;
-    left: 250px;
-    right: 0px;
-    top: 80px;
-  }
-
-  .button {
-    background-color: black;
-    position: absolute;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+  .column1-item > h3, h2, .column1-item > span {
+    display: block;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    left: 115px;
-    top: 150px;
   }
 
-  
-  .footer {
-    display: grid;
+  .column1-item {
+    margin: 50px 15px;
   }
-  
-  .footer a {
-    text-decoration: none;
-    color: white;
+
+  .room-features > h3 {
+      margin-top: 10px;
   }
-  
-  .top {
-    display: grid;
-    grid-template-columns: 200px 2px 200px 2px 200px;
-    justify-content: center;
-    justify-items: center;
-    position: relative;
-    align-items: center;
-  }
-  
-  .divider {
-    background: black;
-    width: 1px;
-    height: 90px;
-  }
-  
-  .block {
-    padding: 0 20px;
-    margin: 20px 0;
-  }
-  
-  .block:nth-child(1) {
-    display: grid;
-    justify-items: center;
-  }
-  
-  .block > p {
-    width: 120px;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  
-  .block > p:first-child {
-    font-weight: bold;
-  }
-  
-  .social-media-icons {
-    display: flex;
-    justify-content: space-between; 
-    width: 70px;
-  }
-  .instagram-icon {
-    width: 12px;
-    height: 12px;
-  }
-  
-  .bottom {
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .bottom p {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  
-  /* Media Query For Responsive Website At BreakPoint */
-  @media only screen and (max-width: 1031px) {
-    .room-description {
-      left: 220px
+
+}
+
+  @media screen and (max-width: 980px) {
+    .img-dimension {
+      width: 260px;
+      height: 260px;
     }
 
-    .user-info {
-      display: block;
-      padding-top: 10px;
+    .column2-item {
+      margin: 10% 5%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
 
     .button {
-      left: 0px;
+      margin: 0 auto;
     }
-  }
 
-  @media only screen and (max-width: 800px){
-    .side-message {
-      grid-auto-flow: column;
-    }
-    .rooms {
-      grid-auto-flow: column;
-    }
-  }
 
-  @media only screen and (max-width: 800px) { 
-    .bottom p {
-      font-size: 12px;
-      line-height: 14px;
-    }
   }
+  
+  @media screen and (max-width: 1208px) {
+    .column2-item{
+      margin: 7% 5%;
+    }
+
+    .room-features > h3 {
+      margin-top: 30px; 
+    }
+
+    ul {
+      margin: 0 15%;
+      line-height: 2;
+    }
+
+    .img-dimension {
+      width: 200px;
+      height: 200px;
+    }
+
+    .button {
+      margin-left: 0px;
+    }
+}
+
+
+/* KINDLY ADD THE MEDIA QUERY FOR FOOTER BELOW FOR RESPONSIVESNESS */
