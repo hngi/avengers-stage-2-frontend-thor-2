@@ -37,18 +37,18 @@
       <a href="#">Rooms</a>
       <a href="#">Facilities</a>
       <a href="#">Gallery</a>
-      <a href="#">Contact</a>
+      <a class="contact-link" href="#">Contact</a>
     </div>
     <button>
       Book Now
     </button>
-  </nav>
+  </nav> 
 
 
     <!--contact image-->
-    <header>
-        <img class="responsive-image" src="image/view-1.jpg" alt="swimming-pool outlook">
-    </header>
+    <div class="cover-image">
+      <img src="./image/contact-pool.png" alt="pool">
+    </div>
 
     <!--mid-contact-part-->
     <section>
@@ -66,7 +66,7 @@
                 <input class="cont-text" type="text" placeholder="NAME"><br>
                 <input class="cont-text" type="email" placeholder="EMAIL"><br>
                 <textarea class="cont-text" placeholder="MESSAGE"></textarea><br>
-                <input class="cont-text sed " type="submit" value="Send">
+                <button class="form-button" type="submit">Send</button>
             </div>
         </div>
     </section>
@@ -99,6 +99,13 @@
       <a href="#"><p>PRIVACY POLICY</p></a>
       <a href="#"><p>&copy; 2020 ABU HOTEL ALL RIGHTS RESERVED</p></a>
     </div>
-  </section>      
+  </section>    
+  <script>
+    window.addEventListener('load', addBottomBorder)
+    function addBottomBorder() {
+      const active = document.querySelector('.contact-link')
+      active.classList.add('active-link')
+    }
+  </script>  
 </body>
 </html>
