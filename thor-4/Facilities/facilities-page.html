@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./facilities-page.css">
+  <link rel="stylesheet" href="../navbar/navbar.css">
+  <title>ABU HOTEL | Facilities</title>
+</head>
+<body>
+  <nav class="hamburger" role="navigation">
+    <div id="menuToggle">
+      
+      <input type="checkbox" />
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <ul id="menu">
+        <a href="#"><li>About Us</li></a>
+        <a href="#"><li>Rooms</li></a>
+        <a href="#"><li>Facilities</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="#"><li>Gallery</li></a>
+        <a href="#""><li>Book Now</li></a>
+      </ul>
+    </div>
+  </nav>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img src="../images/logo.png" alt="logo">
+    </div>
+    <div class="links">
+      <a class="about-link" href="#">About Us</a>
+      <a class="rooms-link" href="#">Rooms</a>
+      <a class="facilities-link" href="#">Facilities</a>
+      <a class="gallery-link" href="#">Gallery</a>
+      <a class="contact-link" href="#">Contact</a>
+    </div>
+    <button>
+      Book Now
+    </button>
+  </nav>
+  <section class="banner">
+    <div class="cover-image">
+      <img src="./images/pool-cover-image.png" alt="pool">
+    </div>
+    <p class="description">Abu Hotel will give you nothing but the best state of the art amenities,
+      from the swimming pool with a view of the beautiful city to the Restaurant that is open 24-hours.</p>
+  </section>
+
+  <!-- FACILITIES SECTION -->
+  <section class="facilities">
+    <div class="card">
+      <img src="./images/pool-card.png" alt="pool">
+      <p><span>SWIMMING POOL</span> <br> Swimming pool with the view of the city,
+        life guards present.</p>
+    </div>
+    <div class="card">
+      <img src="./images/gym-card.png" alt="pool">
+      <p><span>FITNESS CENTER</span> <br> Open 24-hour, Instructors present.</p>
+    </div>
+    <div class="card">
+      <img src="./images/dishes-card.png" alt="pool">
+      <p><span>RESTAURANT</span> <br> Restaurant is open 24-hour, international and
+        continental dishes served.</p>
+    </div>
+    <div class="card">
+      <img src="./images/bar-card.png" alt="pool">
+      <p><span>BAR</span> <br>Daily Happy Hour, 4pm-7pm </p>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <section class="footer">
+    <div class="top">
+      <div class="block">
+        <div><img style="width: 100%" src="../images/logo.png" alt="logo"></div>
+        <div class="social-media-icos">
+          <a href="#"><img src="./icons/facebook.svg" alt="facebook"></a>
+          <a href="#"><img class='instagram-icon' src="./icons/instagram.svg" alt="instagram"></a>
+          <a href="#"><img src="./icons/twitter.svg" alt="twitter"></a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="block">
+        <p>Find Us</p>
+        <p>North Bank Estate </br>1234 Abu Avenue Makurdi,Benue</p>
+      </div>
+      <div class="divider"></div>
+      <div class="block">
+        <p>Contact</p>
+        <p>(+234)80234536</p>
+        <p>(+234)80234536</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <a href="#"><p>TERMS & CONDITION</p></a>
+      <a href="#"><p>PRIVACY POLICY</p></a>
+      <a href="#"><p>&copy; 2020 ABU HOTEL ALL RIGHTS RESERVED</p></a>
+    </div>
+  </section>
+  <script src="../navbar/navbar.js"></script>
+</body>
+<script>
+  window.addEventListener('load', addBottomBorder)
+  function addBottomBorder() {
+    const active = document.querySelector('.facilities-link')
+    active.classList.add('active-link')
+  }
+</script>
+</html>
