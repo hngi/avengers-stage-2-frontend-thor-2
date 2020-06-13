@@ -1,9 +1,0 @@
-/* Animations */
-.scale {
-	transition: all 0.4s;
-}
-
-.scale:hover {
-	transform: scale(1.1);
-}
-/* Animations end */
