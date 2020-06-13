@@ -118,6 +118,13 @@ body {
 
 .column {
   width: 22%;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+   -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+   transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.column:hover {
+  transform: scale(1.05);
 }
 
 .container {
@@ -125,6 +132,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 
 .container .content {
   position: absolute;
@@ -134,6 +142,7 @@ body {
   color: #f1f1f1;
   width: 100%;
   padding: 3px;
+
 }
 
 @media screen and (max-width: 1124px) {
