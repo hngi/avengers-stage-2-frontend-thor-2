@@ -7,17 +7,55 @@
     <!-- Font Awesome Link for Icon -->
     <script src="https://kit.fontawesome.com/2493e6d767.js" crossorigin="anonymous"></script>
     <!--External CSS link -->
-    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/rooms.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <title>ABU HOTEL | Our Rooms</title>
 </head>
 
 <body>
-    <section class="cover"></section>
-    <div class="descritption">
-        <p><em>Guest room or Luxury suites, Abu Hotels accomodations are modern and stylish, furniture are
-                eco-friendly, wifi is always on and room service is available any time.
-            </em></p>
-    </div>
+    <nav class="hamburger" role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Rooms</li></a>
+            <a href="#"><li>Facilities</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>Gallery</li></a>
+            <a href="#""><li>Book Now</li></a>
+          </ul>
+        </div>
+      </nav>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="links">
+          <a class="about-link" href="#">About Us</a>
+          <a class="rooms-link" href="rooms.html">Rooms</a>
+          <a class="facilities-link" href="facilities-page.html">Facilities</a>
+          <a class="gallery-link" href="#">Gallery</a>
+          <a class="contact-link" href="contact-page.html">Contact</a>
+        </div>
+        <button>
+          Book Now
+        </button>
+      </nav>
+      <section class="banner">
+        <div class="cover-image">
+          <img src="./assets/images/facilities-cover.png" alt="pool">
+        </div>
+        <p class="description">Guest room or Luxury suites, Abu Hotels accomodations are modern and stylish, furniture are
+            eco-friendly, wifi is always on and room service is available any time.</p>
+      </section>
+ 
     <div class="row">
         <div class="column1">
             <div class="column1-item">
@@ -71,7 +109,7 @@
         <div class="column2">
             <div class="column2-item">
                     <div class="room-image">
-                        <img class="img-dimension" src="/images/bedroom-3.jpg" alt="single-room">
+                        <img class="img-dimension" src="./assets/images/bedroom-3.jpg" alt="single-room">
                     </div>
                     <div class="room-features">
                         <h3>Single Room</h3>                           
@@ -87,7 +125,7 @@
             </div>
             <div class="column2-item">
                 <div class="room-image">
-                    <img class="img-dimension" src="/images/bedroom-6.jpg" alt="business-suite">
+                    <img class="img-dimension" src="./assets/images/bedroom-6.jpg" alt="business-suite">
                 </div>
                 <div class="room-features">
                     <h3>Business Suite</h3>                           
@@ -103,7 +141,7 @@
             </div>
             <div class="column2-item">
                 <div class="room-image">
-                    <img class="img-dimension" src="/images/bedroom-4.jpg" alt="standard-room">
+                    <img class="img-dimension" src="./assets/images/bedroom-4.jpg" alt="standard-room">
                 </div>
                 <div class="room-features">
                     <h3>Standard Room</h3>                           
@@ -119,7 +157,7 @@
             </div>
             <div class="column2-item">
                 <div class="room-image">
-                    <img class="img-dimension" src="/images/bedroom-4.jpg" alt="couple-suite">
+                    <img class="img-dimension" src="./assets/images/bedroom-4.jpg" alt="couple-suite">
                 </div>
                 <div class="room-features">
                     <h3>Couple Suite</h3>                           
@@ -135,7 +173,7 @@
             </div>
             <div class="column2-item">
                 <div class="room-image">
-                    <img class="img-dimension" src="/images/bedroom-7.jpg" alt="family-suite">
+                    <img class="img-dimension" src="./assets/images/bedroom-7.jpg" alt="family-suite">
                 </div>
                 <div class="room-features">
                     <h3>Family Suite</h3>                           
@@ -151,7 +189,7 @@
             </div>
             <div class="column2-item">
                 <div class="room-image">
-                    <img class="img-dimension" src="/images/bedroom-4.jpg" alt="couple-suite">
+                    <img class="img-dimension" src="./assets/images/bedroom-4.jpg" alt="couple-suite">
                 </div>
                 <div class="room-features">
                     <h3>Presidential Suite</h3>                           
@@ -171,11 +209,11 @@
     <section class="footer">
         <div class="top">
           <div class="block">
-            <div><img style="width: 100%" src="../images/logo.png" alt="logo"></div>
+            <div><img style="width: 100%" src="./assets/images/logo.png" alt="logo"></div>
             <div class="social-media-icos">
-              <a href="#"><img src="../footer/icons/facebook.svg" alt="facebook"></a>
-              <a href="#"><img class='instagram-icon' src="../footer/icons/instagram.svg" alt="instagram"></a>
-              <a href="#"><img src="../footer/icons/twitter.svg" alt="twitter"></a>
+              <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+              <a href="#"><img class='instagram-icon' src="./assets/icons/instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="./assets/icons/twitter.svg" alt="twitter"></a>
             </div>
           </div>
           <div class="divider"></div>
