@@ -1,0 +1,167 @@
+/* CSS Responsive Grid View */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+}
+
+/* BANNER STYLING */
+ .banner {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 40px;
+}
+
+.cover-image > img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .description {
+    font-size: 18px;
+  }
+}
+
+/* CSS FOR ROOM PAGE ONLY */
+ .row {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   
+ }
+
+ .column1-item {
+   margin: 15% 5%;
+   line-height: 2;
+   
+ }
+
+ .column1-item > h3 {
+   margin-left: 23px;
+ }
+
+ .column2-item {
+   margin: 10% 5%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+
+ .img-dimension {
+  width: 260px;
+  height: 260px;
+}
+
+.room-features > h3 {
+  margin-top: 50px;
+}
+
+.room-size {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.room-fee {
+  margin-bottom: 0px;
+}
+
+.button {
+  background-color: black;
+  margin-top: 15px;
+  margin-left: 130px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* MEDIA QUERY FOR ROOMS PAGE ONLY */
+@media only screen and (max-width: 850px){
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .column1-item > h3, h2, .column1-item > span {
+    display: block;
+    text-align: center;
+  }
+
+  .column1-item {
+    margin: 50px 15px;
+  }
+
+  .welcome-message {
+    text-align: center;
+  }
+
+  .room-features > h3 {
+      margin-top: 10px;
+  }
+
+}
+
+  @media screen and (max-width: 980px) {
+    .img-dimension {
+      width: 260px;
+      height: 260px;
+    }
+
+    .column2-item {
+      margin: 10% 5%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+
+
+  }
+  
+  @media screen and (max-width: 1208px) {
+    .column2-item{
+      margin: 7% 5%;
+    }
+
+    .room-features > h3 {
+      margin-top: 30px; 
+    }
+
+    ul {
+      margin: 0 15%;
+      line-height: 2;
+    }
+
+    .img-dimension {
+      width: 200px;
+      height: 200px;
+    }
+
+    .button {
+      margin-left: 0px;
+    }
+}
+
+
+/* KINDLY ADD THE MEDIA QUERY FOR FOOTER BELOW FOR RESPONSIVESNESS */
