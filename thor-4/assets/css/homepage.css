@@ -58,7 +58,7 @@ body {
 #brandStrip {
   width: 100%;
   height: auto;
-  background: url(./images/dining-2.jpg);
+  background: url(../images/dining-2.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -93,32 +93,36 @@ body {
     width: 90%;
   }
   #tatIframe {
-    width: 95% !important;
+    width: 90% !important;
   }
+}
+
+.gallery {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .img {
   height: 300px;
-  width: 300px;
+  width: 100%;
   display: inline-block;
-  margin-top: 20px
+  margin-top: 40px;
  }
 
-.column {
-  flex: 33.33%;
-  padding: 5px;
-  display: inline-block;
+ .row {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
 }
 
-.row {
-  
-  justify-content: center;
-  align-items: center;
+.column {
+  width: 22%;
 }
 
 .container {
   position: relative;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -128,12 +132,41 @@ body {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 300px;
+  width: 100%;
   padding: 3px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1124px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 45%;
+  }
+
+  .strip-logo {
+    width: 15rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    flex-direction: column;
+  }
+
   .column {
     width: 100%;
   }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .strip-logo {
+    width: 12rem;
+    height: auto;
+  }
+  
 }

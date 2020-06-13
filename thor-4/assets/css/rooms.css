@@ -8,24 +8,37 @@ html, body {
   margin:0;
 }
 
+/* BANNER STYLING */
+ .banner {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 40px;
+}
+
+.cover-image > img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .description {
+    font-size: 18px;
+  }
+}
+
 /* CSS FOR ROOM PAGE ONLY */
-.cover {
-  background-image: url("../images/bedroom-1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  height: 86.81vh;
- }
-
- .descritption {
-     margin: 0 auto;
-     text-align: center;
-     width: 43%;
-     line-height: 1.5;
-     margin-top: 5%;
- }
-
  .row {
    display: grid;
    grid-template-columns: 50% 50%;
@@ -78,72 +91,6 @@ html, body {
   font-size: 16px;
 }
 
-/* CSS FOR FOOTER  */
-.footer {
-  display: grid;
-}
-
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-
-.top {
-  display: grid;
-  grid-template-columns: 200px 2px 200px 2px 200px;
-  justify-content: center;
-  justify-items: center;
-  position: relative;
-  align-items: center;
-}
-
-.divider {
-  background: black;
-  width: 1px;
-  height: 90px;
-}
-
-.block {
-  padding: 0 20px;
-  margin: 20px 0;
-}
-
-.block:nth-child(1) {
-  display: grid;
-  justify-items: center;
-}
-
-.block > p {
-  width: 120px;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.block > p:first-child {
-  font-weight: bold;
-}
-
-.social-media-icons {
-  display: flex;
-  justify-content: space-between; 
-  width: 70px;
-}
-.instagram-icon {
-  width: 12px;
-  height: 12px;
-}
-
-.bottom {
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
-
-.bottom p {
-  font-size: 14px;
-  line-height: 16px;
-}
 
 /* MEDIA QUERY FOR ROOMS PAGE ONLY */
 @media only screen and (max-width: 850px){
