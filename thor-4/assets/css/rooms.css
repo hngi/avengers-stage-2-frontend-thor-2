@@ -91,6 +91,10 @@ html, body {
   font-size: 16px;
 }
 
+.active-link {
+  border-bottom: 2px solid black;
+}
+
 
 /* MEDIA QUERY FOR ROOMS PAGE ONLY */
 @media only screen and (max-width: 850px){
