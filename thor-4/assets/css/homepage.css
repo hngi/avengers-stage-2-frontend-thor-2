@@ -58,7 +58,7 @@ body {
 #brandStrip {
   width: 100%;
   height: auto;
-  background: url(./images/dining-2.jpg);
+  background: url(../images/dining-2.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -95,6 +95,19 @@ body {
   #tatIframe {
     width: 95% !important;
   }
+}
+
+.room-display {
+  /* border: 3px solid green; */
+}
+
+.gallery {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
 }
 
 .img {
